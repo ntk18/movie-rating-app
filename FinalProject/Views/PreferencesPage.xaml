@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:FinalProject.ViewModels"
+             x:Class="FinalProject.Views.PreferencesPage"
+             BackgroundColor="{DynamicResource PageBackgroundColor}">
+    <ContentPage.BindingContext>
+        <vm:PreferencesViewModel />
+    </ContentPage.BindingContext>
+    <Grid Style="{DynamicResource DefaultGrid}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Label Text="Preferences" Style="{DynamicResource TitleLabelStyle}" HorizontalOptions="Center" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"/>
+        <Switch x:Name="lightDark" IsToggled="false" Toggled="lightDark_Toggled" Grid.Row="1" Grid.Column="1"/>
+        <Label Text="Light mode:" Grid.Row="1" Grid.Column="0" HorizontalOptions="Center"/>
+        <Switch x:Name="detailedLists" IsToggled="false" Toggled="detailedLists_Toggled" Grid.Row="2" Grid.Column="1"/>
+        <Label Text="Detailed Lists?" Grid.Row="2" Grid.Column="0" HorizontalOptions="Center"/>
+        <Button x:Name="backBtn" Text="Back" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Clicked="backBtn_Clicked" HorizontalOptions="Fill" VerticalOptions="CenterAndExpand" Style="{DynamicResource DefaultBtn}"/>
+    </Grid>
+</ContentPage>

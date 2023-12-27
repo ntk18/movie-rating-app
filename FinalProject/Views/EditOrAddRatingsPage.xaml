@@ -1,0 +1,36 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:FinalProject.ViewModels"
+             x:Class="FinalProject.Views.EditOrAddRatingsPage"
+             BackgroundColor="{DynamicResource PageBackgroundColor}">
+    <VerticalStackLayout Padding="10" Spacing="10">
+        <Grid HorizontalOptions="Start">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Label x:Name="titleLabel" Text="{Binding MovieTitle}" VerticalOptions="Center" Style="{DynamicResource TitleLabelStyle}" Grid.Row="0" Grid.Column="0"/>
+        </Grid>
+
+        <HorizontalStackLayout HorizontalOptions="CenterAndExpand" Spacing="10">
+            <Button x:Name="decrementButton" Text="-" VerticalOptions="Center" Clicked="DecrementButton_Clicked" Style="{DynamicResource Key=stepperBtn}"/>
+            <Button x:Name="incrementButton" Text="+" Clicked="IncrementButton_Clicked" Style="{DynamicResource Key=stepperBtn}"/>
+            <Label Text="Rating: " VerticalOptions="Center" Style="{DynamicResource DetailLabelStyle}"/>
+            <Label x:Name="ratingLabel" Text="{Binding MovieRating, StringFormat='{0:N2}'}" VerticalOptions="Center" Style="{DynamicResource DetailLabelStyle}"/>
+        </HorizontalStackLayout>
+
+        <VerticalStackLayout HorizontalOptions="CenterAndExpand" Spacing="5">
+            <Label Text="Notes:" VerticalOptions="Center" Style="{DynamicResource DetailLabelStyle}"/>
+            <Editor x:Name="notesEntry" Placeholder="Enter notes here..." Text="{Binding MovieNotes}" HeightRequest="200" WidthRequest="350" CursorPosition="0" VerticalTextAlignment="Start"/>
+        </VerticalStackLayout>
+
+        <HorizontalStackLayout HorizontalOptions="CenterAndExpand" Spacing="5">
+            <Button x:Name="cancelBtn" Text="Cancel" Clicked="cancelBtn_Clicked" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Style="{DynamicResource DefaultBtn}"/>
+            <Button x:Name="saveBtn" Text="Save" Clicked="saveBtn_Clicked" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Style="{DynamicResource DefaultBtn}"/>
+        </HorizontalStackLayout>
+    </VerticalStackLayout>
+
+
+</ContentPage>

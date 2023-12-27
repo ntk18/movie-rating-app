@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FinalProject.Themes.LightTheme">
+
+    <Color x:Key="TabBackgroundColor">#C2C2C2</Color>
+    <Color x:Key="PageBackgroundColor">White</Color>
+    
+    <Color x:Key="ButtonColor">#AFCBFF</Color>
+        
+    <Color x:Key="BorderColor">Black</Color>
+        
+    <Color x:Key="PrimaryTextColor">Black</Color>
+
+    <Color x:Key="EntryBackgroundColor">White</Color>
+    <Color x:Key="PlaceholderColor">#A6A6A6</Color>
+
+    <Color x:Key="SwitchOnColor">#00C01A</Color>
+    <Color x:Key="SwitchBackgroundColor">#D6D6D6</Color>
+    <Color x:Key="RatingBackgroundColor">#F4F4F5</Color>
+    <Color x:Key="DeleteButtonColor">#E95D5D</Color>
+    
+</ResourceDictionary>

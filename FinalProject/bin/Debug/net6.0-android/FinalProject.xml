@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FinalProject</name>
+    </assembly>
+    <members>
+        <member name="T:FinalProject.MovieDetails">
+            Fields above are for API calls for the Home Page
+            Fields below are for API calls for the Movie Details Page
+        </member>
+    </members>
+</doc>

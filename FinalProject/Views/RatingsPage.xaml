@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:FinalProject.ViewModels"
+             xmlns:local="clr-namespace:FinalProject;assembly=FinalProject"
+             x:Class="FinalProject.Views.RatingsPage"
+             BackgroundColor="{DynamicResource PageBackgroundColor}">
+    <ContentPage.BindingContext>
+        <vm:RatingsViewModel />
+    </ContentPage.BindingContext>
+    <ScrollView>
+        <VerticalStackLayout>
+        <HorizontalStackLayout Spacing="10" Padding="10">
+            <Label Text="Sort By:" VerticalOptions="Center"/>
+            <Picker HorizontalOptions="Start" SelectedIndex="0" VerticalOptions="Center"
+                SelectedItem="{Binding SelectedPickerItem, Mode=TwoWay}" ItemsSource="{Binding PickerItems}" SelectedIndexChanged="Picker_SelectedIndexChanged">
+            </Picker>
+        </HorizontalStackLayout>
+        <ListView x:Name="lvRatings" VerticalScrollBarVisibility="Always" ItemsSource="{Binding MovieList}">
+            <ListView.ItemTemplate>
+                <DataTemplate x:DataType="local:MovieDetails">
+                    <ViewCell>
+                        <Grid Style="{DynamicResource ListviewGrid}">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Label Text="{Binding Title}" 
+                                   Style="{DynamicResource TitleLabelStyle}" 
+                                   Grid.Row="0"
+                                   Grid.Column="0" 
+                                   Grid.ColumnSpan="3"/>
+                            <Label 
+                                VerticalOptions="Center" 
+                                HorizontalOptions="Start"
+                                Grid.Row="1" Grid.Column="0">
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="Rating: " Style="{DynamicResource SpanLabel}"/>
+                                        <Span Text="{Binding Rating, StringFormat='{0:N2}'}" />
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                            <Label 
+                                VerticalOptions="Center" 
+                                HorizontalOptions="Start"
+                                Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3">
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="Last Updated: " Style="{DynamicResource SpanLabel}"/>
+                                        <Span Text="{Binding LastUpdated}" />
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                            <Label
+                                VerticalOptions="Start" 
+                                HorizontalOptions="Start"
+                                Style="{DynamicResource OverviewLabelStyle}"
+                                Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3">
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="Your notes: " Style="{DynamicResource SpanLabel}"/>
+                                        <Span Text="{Binding Notes}" />
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                            <Label Text="{Binding Overview, Converter={StaticResource StringTruncateConverter}}" Style="{DynamicResource OverviewLabelStyle}" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3" IsVisible="{Binding DetailedListPreference}"/>
+                            <Button x:Name="viewBtn" Text="View Movie Page" Clicked="viewBtn_Clicked" Grid.Row="5" Grid.Column="0" Style="{DynamicResource ListviewBtn}"/>
+                            <Button x:Name="EditBtn" Text="Edit Rating" Clicked="EditBtn_Clicked" Grid.Row="5" Grid.Column="1" Style="{DynamicResource ListviewBtn}"/>
+                            <Button x:Name="DeleteBtn" Text="Delete Rating" Clicked="DeleteBtn_Clicked" Grid.Row="5" Grid.Column="2" Style="{DynamicResource DeleteBtn}"/>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

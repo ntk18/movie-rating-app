@@ -1,0 +1,77 @@
+is_global = true
+build_property.TargetFramework = net6.0-ios
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = FinalProject
+build_property.ProjectDir = C:\Users\natha\source\repos\ntk18\movie-rating-app\FinalProject\
+
+[C:/Users/natha/source/repos/ntk18/movie-rating-app/FinalProject/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FinalProject.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/natha/source/repos/ntk18/movie-rating-app/FinalProject/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FinalProject.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/natha/source/repos/ntk18/movie-rating-app/FinalProject/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FinalProject.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/natha/source/repos/ntk18/movie-rating-app/FinalProject/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FinalProject.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Users/natha/source/repos/ntk18/movie-rating-app/FinalProject/Themes/DarkTheme.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FinalProject.Themes.DarkTheme.xaml
+build_metadata.AdditionalFiles.TargetPath = Themes\DarkTheme.xaml
+build_metadata.AdditionalFiles.RelativePath = Themes\DarkTheme.xaml
+
+[C:/Users/natha/source/repos/ntk18/movie-rating-app/FinalProject/Themes/LightTheme.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FinalProject.Themes.LightTheme.xaml
+build_metadata.AdditionalFiles.TargetPath = Themes\LightTheme.xaml
+build_metadata.AdditionalFiles.RelativePath = Themes\LightTheme.xaml
+
+[C:/Users/natha/source/repos/ntk18/movie-rating-app/FinalProject/Views/EditOrAddRatingsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FinalProject.Views.EditOrAddRatingsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\EditOrAddRatingsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\EditOrAddRatingsPage.xaml
+
+[C:/Users/natha/source/repos/ntk18/movie-rating-app/FinalProject/Views/HomePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FinalProject.Views.HomePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\HomePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\HomePage.xaml
+
+[C:/Users/natha/source/repos/ntk18/movie-rating-app/FinalProject/Views/MovieDetailPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FinalProject.Views.MovieDetailPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\MovieDetailPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\MovieDetailPage.xaml
+
+[C:/Users/natha/source/repos/ntk18/movie-rating-app/FinalProject/Views/PreferencesPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FinalProject.Views.PreferencesPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\PreferencesPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\PreferencesPage.xaml
+
+[C:/Users/natha/source/repos/ntk18/movie-rating-app/FinalProject/Views/RatingsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FinalProject.Views.RatingsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\RatingsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\RatingsPage.xaml

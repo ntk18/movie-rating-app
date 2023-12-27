@@ -1,0 +1,1 @@
+C:\Users\natha\source\repos\ntk18\movie-rating-app\FinalProject\FinalProject.csproj;x64
